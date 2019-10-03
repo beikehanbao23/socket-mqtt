@@ -256,3 +256,11 @@ for (int i = 0; i < 5; i++) {
 * https://github.com/netty/netty
 * https://github.com/1ssqq1lxr/iot_push
 * https://github.com/Wizzercn/MqttWk
+
+## 打包
+
+```
+
+mvn clean  package -Dmaven.test.skip=true
+scp target/*.jar root@47.110.251.192:/home/data/project/robot/app/robot.jar
+```
